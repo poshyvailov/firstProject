@@ -18,7 +18,7 @@ public class Calculator {
             String selectedMenuOption = userInput.nextLine();
             System.out.println("Thanks! You selected: " + selectedMenuOption);
 
-            if ((selectedMenuOption.contains("0")) || (selectedMenuOption.contains("exit")) || (selectedMenuOption.contains("Exit")) ) {
+            if ((selectedMenuOption.contains("0")) || (selectedMenuOption.contains("exit")) || (selectedMenuOption.contains("Exit"))) {
                 System.out.println("Have a nice day, bye!");
                 break;
             }
@@ -60,19 +60,19 @@ public class Calculator {
     }
 
 
-    public static int sum(int firstNumber, int secondNumber){
+    public static int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
     }
 
-    public static int div(int firstNumber, int secondNumber){
+    public static int div(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
 
-    public static int multiply(int firstNumber, int secondNumber){
+    public static int multiply(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
     }
 
-    public static int subtraction(int firstNumber, int secondNUmber){
+    public static int subtraction(int firstNumber, int secondNUmber) {
         return firstNumber - secondNUmber;
     }
 
