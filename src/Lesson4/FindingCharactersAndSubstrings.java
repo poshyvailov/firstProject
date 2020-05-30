@@ -4,7 +4,7 @@ import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class FindingCharactersAndSubstrings {
     public static int totalLetterCount = 0;  // Создал статическую переменную, которая будет показывать длину текста в строке cityName.
-                                             // будем ее использовать ниже
+    // будем ее использовать ниже
 
 
     public static void main(String[] args) {
@@ -25,7 +25,6 @@ public class FindingCharactersAndSubstrings {
         // Также тут можно встретить пример применения метода length()
 
 
-
         System.out.println(cityName.indexOf("Dnipro"));
         // Здесь мы используем indexOf метод. Этот метод пробегается по нашей строке и выводит
         // индекс первлой буквы с которой начинается заданное слово или буква. У нас это - 'Dnipro'.
@@ -38,9 +37,6 @@ public class FindingCharactersAndSubstrings {
         // В предыдущих шагах мы узнали длину строки и узнали, что наш город первый раз встречается в строке под индексом 34.
         // Тепеоь мы решили вывести часть стрики,которая начинается с нашего слова - Dnipro (34 индекс )
         // и до конца строки (Используем нашу переменню totalLetterCount ).
-
-
-
 
 
     }

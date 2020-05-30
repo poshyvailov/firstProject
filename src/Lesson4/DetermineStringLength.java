@@ -13,7 +13,7 @@ public class DetermineStringLength {
         System.out.println("Please type your name");
         String userName = scanner.nextLine();
 
-        if(userName.isEmpty()) {
+        if (userName.isEmpty()) {
             while (userName.isEmpty()) {
                 System.out.println("You sent empty field. Please try again");
                 userName = scanner.nextLine();
@@ -27,17 +27,6 @@ public class DetermineStringLength {
         // По поводу метода lenght() я приводил пример в классе "FindingCharactersAndSubstrings".
         // Мы используем метод lenght для определения длины строки. К примеру можем использовать в циклах
         // для перебора значений строки или для присваивания значений в массивы и т.д.
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
