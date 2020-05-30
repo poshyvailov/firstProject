@@ -40,6 +40,19 @@ public class FileManager {
                     createNewFile(newFileName);
                     break;
                 case ("2"):
+                    System.out.println("Please type file should be removed");
+                    String fileForRemove = userInput.nextLine();
+                    removeFile(fileForRemove);
+                    break;
+                case ("3"):
+                    getAllFiles();
+                    break;
+                case ("4"):
+                    System.out.println("Type file name that should be renamed");
+                    String oldFile = userInput.nextLine();
+                    System.out.println("Type new file name");
+                    String newFile = userInput.nextLine();
+                    renameFile(oldFile, newFile);
 
 
 
@@ -48,19 +61,52 @@ public class FileManager {
     }
 
 
-         public static void createNewFile (String newFilename){
-             File newFile = new File(newFilename);
-             try {
-                 if (newFile.createNewFile()){
-                     System.out.println("File was successfully created. File name is: " + newFile.getName());
-                 } else {
-                     System.out.println("File was not created. Try to change file name");
-                 }
-             } catch (IOException e) {
-                 e.printStackTrace();
-             }
-         }
+    public static void createNewFile(String fileName) {
+        File file = new File(fileName);
+        try {
+            if (file.createNewFile()) {
+                System.out.println("File was successfully created. File name is: " + file.getName());
+            } else {
+                System.out.println("File was not created. Try to change file name");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+
+    public static void removeFile(String fileForRemove) {
+        File fileForDel = new File(fileForRemove);
+        if (fileForDel.delete()) {
+            System.out.println("File " + fileForRemove + "was successfully deleted");
+        } else {
+            System.out.println("File not found");
+        }
+    }
+
+
+    public static void getAllFiles(){
+        File curDir = new File(".");
+        File [] fileList = curDir.listFiles();
+           for(File file : fileList){
+               if (file.isFile()){
+                   System.out.println(file.getName());
+               }
+           }
+    }
+
+
+    public static void renameFile(String oldFileName, String newFileName){
+        File fileOld = new File(oldFileName);
+        File fileNew = new File(newFileName);
+        boolean success = fileOld.renameTo(fileNew);
+        if (success){
+            System.out.println("File was successfully renamed. File name is: " + newFileName);
+        } else {
+            System.out.println("File with this name is already exists");
+        }
+
+    }
 
 
 }
