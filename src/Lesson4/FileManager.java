@@ -53,6 +53,10 @@ public class FileManager {
                     System.out.println("Type new file name");
                     String newFile = userInput.nextLine();
                     renameFile(oldFile, newFile);
+                    break;
+                case ("5"):
+                    showCurrentDirPass();
+
 
 
 
@@ -105,8 +109,14 @@ public class FileManager {
         } else {
             System.out.println("File with this name is already exists");
         }
-
     }
+
+
+    public static void showCurrentDirPass(){
+        String dir = System.getProperty("user.dir");
+        System.out.println("Current directory pass is: " + dir);
+    }
+
 
 
 }
