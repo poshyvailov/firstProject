@@ -9,7 +9,7 @@ public class Dog extends Animal {  // Создали класс Dog которы
 
 
     @Override
-    public String toString(){    // переопределили метод toString. Теперь он будет выводить данные экземпляра класса
+    public String toString() {    // переопределили метод toString. Теперь он будет выводить данные экземпляра класса
         return "I am dog with name: " + name + " with age: " + age;
 
     }
