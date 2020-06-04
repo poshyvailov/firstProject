@@ -10,7 +10,7 @@ public class Cat extends Animal{  // Создали класс Cat которы�
 
     @Override
     public String toString(){   //  переопределили метод toString. Теперь он будет выводить данные экземпляра класса
-        return "My name is: " + name + " and my age is: " + age;
+        return "I am cat with name: " + name + " with age: " + age;
     }
 
 
