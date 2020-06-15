@@ -12,14 +12,15 @@ public class LinkedListCollection {
             myCollection.add(a);
         }
 
-        for (Integer collection : myCollection){   //создали цикл for each где мы поочередно выводим все значения с нашей коллекции
-            System.out.println(collection);        // Integer - это тип значений. collection - наша переменная для вывода значения с коллекции
+        System.out.println("Our LinkedList collection contains next values: ");
+        for (Integer collection : myCollection){   //Создали цикл for each где мы поочередно выводим все значения с нашей коллекции
+            System.out.println(collection);        // Integer - это тип значений. collection - наша переменная для вывода значений с коллекции
                                                    // myCollection - коллекция,котроую мы будем обрабатывать
         }
 
-        myCollection.remove(3);              // Удаляем элемент под индексом "3" (он же и хранит значение "3" которое мы просвоили этому индексу)из нашей коллекции
+        myCollection.remove(3);              // Удаляем элемент под индексом "3" (он же и хранит значение "3" которое мы присвоили этому индексу) из нашей коллекции
 
-        System.out.println(myCollection);          //Выводим значения нашей коллекции и видим,что удалилось значение под номером "3".
+        System.out.println("After removing element with index - 3 our LinkedListcollection contains next values: "+ myCollection);          //Выводим значения нашей коллекции и видим,что удалился элемент под индектом "3",который хранил значение - "3".
 
 
 
