@@ -1,5 +1,7 @@
 package Lesson7;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.LinkedList;
 
 public class LinkedListCollection {
@@ -20,8 +22,11 @@ public class LinkedListCollection {
 
         myCollection.remove(3);              // Удаляем элемент под индексом "3" (он же и хранит значение "3" которое мы присвоили этому индексу) из нашей коллекции
 
-        System.out.println("After removing element with index - 3 our LinkedListcollection contains next values: "+ myCollection);          //Выводим значения нашей коллекции и видим,что удалился элемент под индектом "3",который хранил значение - "3".
+        System.out.println("After removing element with index - 3 our LinkedListcollection contains next values: "+ myCollection );          //Выводим значения нашей коллекции и видим,что удалился элемент под индектом "3",который хранил значение - "3".
 
+        System.out.println();
+        System.out.println("Теперь под индексом - 3 хранится эелемент со значением - 4");
+        System.out.println(myCollection.get(3));  // Проверям какое значение теперь хранится под индексом 3
 
 
 
